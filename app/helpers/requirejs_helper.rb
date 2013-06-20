@@ -34,7 +34,7 @@ module RequirejsHelper
     html = ""
 
     _once_guard do
-      unless requirejs.run_config.empty?
+      unless true #requirejs.run_config.empty?
         run_config = requirejs.run_config.dup
         unless _priority.empty?
           run_config = run_config.dup
